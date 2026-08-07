@@ -5,77 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications — Renu Arya</title>
   <meta name="description" content="Neuroscience publications by Renu Arya">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='M50,15 C60,10 70,20 80,15 C75,25 80,35 70,40 C80,40 85,50 80,55 C75,60 65,55 60,60 C65,70 55,75 50,70 C45,75 35,70 40,60 C35,55 40,50 45,40 C30,35 35,25 40,15 C50,20 60,10 50,15 Z'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='70' fill='%23000'%3E%C2%A7%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #0f172a;
-      --muted: #475571;
-      --border: #e2e8f0;
-      --accent: #0284c7;
-      --link: #0284c7;
-      --link-hover: #0369a1;
-      --max-width: 680px;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.7;
-      font-size: 16px;
-      background-image: radial-gradient(circle at 20% 50%, rgba(2, 132, 196, 0.03) 0%, transparent 50%);
-    }
-    .shell-wide { max-width: var(--max-width); margin: 0 auto; padding: 32px 24px; width: 100%; }
-    .topbar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 1rem; margin-bottom: 2.5rem; }
-    .mark { font-size: 1.5rem; font-weight: 700; color: var(--text); text-decoration: none; }
-    .mark .neuron { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; position: relative; }
-    .mark .neuron::before, .mark .neuron::after { content: ''; position: absolute; background: var(--accent); border-radius: 50%; }
-    .mark .neuron::before { width: 6px; height: 6px; top: -8px; left: 2px; }
-    .mark .neuron::after { width: 4px; height: 4px; bottom: -6px; right: -4px; }
-    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; margin-left: 1.75rem; transition: all 0.2s ease; }
-    nav a:hover { color: var(--text); }
-    nav a.active { color: var(--text); border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
-    h1 { font-size: 2rem; margin-bottom: 1.25rem; }
-    h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
-    .venue { color: var(--muted); font-size: 0.9rem; font-style: italic; margin-bottom: 0.5rem; }
-    .abstract { margin: 1rem 0; color: var(--muted); }
-    .highlight { background: #f0f9ff; padding: 2px 8px; border-radius: 3px; font-size: 0.85rem; }
-    .pub-link { display: inline-block; font-size: 0.85rem; margin-top: 0.5rem; }
-    .pub-link a { color: var(--link); font-weight: 500; }
-    .divider { height: 1px; background: var(--border); margin: 2rem 0; }
-    .cv-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--muted); border: 1px solid var(--border); padding: 8px 16px; border-radius: 6px; background: white; }
-    .footer-links { display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; }
-    footer { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 2rem; color: var(--muted); font-size: 0.85rem; }
-    .citation-count { 
-      display: inline-block; 
-      background: var(--accent); 
-      color: white; 
-      font-size: 0.7rem; 
-      padding: 2px 8px; 
-      border-radius: 10px; 
-      margin-right: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="shell-wide">
     <header class="topbar">
-      <a class="mark" href="./">
-        <span style="position: relative; display: inline-block;">
-          Renu
-          <span class="neuron"></span>
-        </span> Arya
-      </a>
+      <a class="mark" href="./">Renu<span class="dot">.</span>Arya</a>
       <nav>
-        <a href="./">about</a>
-        <a href="publications.html" class="active">publications</a>
-        <a href="cv.md" class="cv-link" target="_blank" rel="noopener">→ <span>CV</span></a>
+        <a href="./">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="project.html">Projects</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="cv.pdf" class="cv-link" target="_blank" rel="noopener">CV</a>
       </nav>
     </header>
 
-    <h1>Publications</h1>
+    <section class="hero">
+      <p class="greeting">Research Output</p>
+      <h1 class="name">Publications</h1>
+    </section>
 
     <p style="margin-bottom: 1.5rem; color: var(--muted);">
       <a href="https://scholar.google.com/citations?hl=en&user=OG6-NsIAAAAJ" target="_blank" rel="noopener">📚 View full profile on Google Scholar</a>
@@ -118,8 +68,6 @@
         Co-authored and co-illustrated with team members from IIT Delhi.
       </div>
     </div>
-
-    <a href="cv.md" class="cv-link" target="_blank" rel="noopener">← View full CV</a>
 
     <footer>
       <div class="footer-links">

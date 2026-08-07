@@ -3,304 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Renu Arya — Cognitive Neuroscience Researcher</title>
-  <meta name="description" content="Renu Arya - Cognitive Neuroscience Researcher specializing in EEG/fMRI analysis, computational modeling, and neurotechnology">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='M50,15 C60,10 70,20 80,15 C75,25 80,35 70,40 C80,40 85,50 80,55 C75,60 65,55 60,60 C65,70 55,75 50,70 C45,75 35,70 40,60 C35,55 40,50 45,40 C30,35 35,25 40,15 C50,20 60,10 50,15 Z'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Renu Arya</title>
+  <meta name="description" content="Renu Arya - Cognitive Science Researcher">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='70' fill='%23000'%3E%C2%A7%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #0f172a;
-      --muted: #475571;
-      --border: #cbd5e1;
-      --border-light: #e2e8f0;
-      --accent: #0284c7;
-      --accent-light: #7dd3fc;
-      --link: #0284c7;
-      --link-hover: #0369a1;
-      --signal: #16a34a;
-      --max-width: 720px;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.7;
-      font-size: 16px;
-      background-image: radial-gradient(circle at 20% 50%, rgba(2, 132, 196, 0.03) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, rgba(2, 132, 196, 0.03) 0%, transparent 50%);
-    }
-    h1, h2, h3 { font-weight: 700; line-height: 1.2; }
-    h1 { font-size: 2.4rem; letter-spacing: -0.5px; }
-    h2 { font-size: 1.4rem; margin-top: 3rem; margin-bottom: 1.5rem; }
-    h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    p { margin-bottom: 1rem; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { color: var(--link-hover); text-decoration: underline; }
-    .shell-wide {
-      width: 100%;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 32px 24px;
-    }
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 1rem;
-      margin-bottom: 2.5rem;
-    }
-    .mark {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--text);
-      text-decoration: none;
-      letter-spacing: -0.5px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .mark .neuron { 
-      width: 10px; 
-      height: 10px; 
-      background: var(--accent);
-      border-radius: 50%;
-      position: relative;
-      flex-shrink: 0;
-    }
-    .mark .neuron::before,
-    .mark .neuron::after {
-      content: '';
-      position: absolute;
-      background: var(--accent);
-      border-radius: 50%;
-    }
-    .mark .neuron::before {
-      width: 6px; height: 6px;
-      top: -8px; left: 2px;
-    }
-    .mark .neuron::after {
-      width: 4px; height: 4px;
-      bottom: -6px; right: -4px;
-    }
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      margin-left: 1.75rem;
-      transition: all 0.2s ease;
-      position: relative;
-    }
-    nav a:hover { color: var(--text); }
-    nav a.active { color: var(--text); }
-    nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--accent);
-    }
-    .hero { margin-bottom: 2.5rem; }
-    .hero .greeting {
-      font-size: 1.2rem;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-      font-weight: 400;
-    }
-    .hero .name {
-      font-size: 2.4rem;
-      font-weight: 300;
-      margin-bottom: 0.5rem;
-    }
-    .hero .name .highlight {
-      font-weight: 700;
-      color: var(--text);
-      border-bottom: 3px solid var(--accent);
-      padding-bottom: 2px;
-    }
-    .hero .title {
-      font-size: 1.1rem;
-      color: var(--muted);
-      margin-top: 0.5rem;
-      font-weight: 400;
-    }
-    .social-links {
-      display: flex;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-    .social-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 14px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      color: var(--muted);
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: all 0.15s ease;
-      background: white;
-    }
-    .social-btn:hover {
-      color: var(--link);
-      border-color: var(--link);
-    }
-    .tag {
-      display: inline-block;
-      background: rgba(2, 132, 196, 0.08);
-      color: var(--link);
-      border: 1px solid rgba(2, 132, 196, 0.2);
-      padding: 3px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      margin: 3px;
-    }
-    .section { margin: 3rem 0; }
-    .post {
-      border-bottom: 1px solid var(--border-light);
-      padding: 1.5rem 0;
-    }
-    .post:last-child { border-bottom: none; }
-    .post h3 { font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
-    .post h3 .level {
-      font-size: 0.75rem;
-      background: var(--accent);
-      color: white;
-      padding: 2px 8px;
-      border-radius: 10px;
-      font-weight: 600;
-    }
-    .post .meta {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .post .meta .org { font-weight: 600; color: var(--text); }
-    .post .meta .period { color: var(--accent); }
-    .post p { color: var(--muted); margin-bottom: 0.5rem; }
-    .post .tags { margin-top: 0.5rem; }
-    .cv-link {
-      display: inline-inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.85rem;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      padding: 8px 16px;
-      border-radius: 6px;
-      transition: all 0.15s ease;
-      background: white;
-    }
-    .cv-link:hover {
-      color: var(--text);
-      border-color: var(--border-dark);
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .stat-card {
-      background: #f0f9ff;
-      border: 1px dashed var(--accent-light);
-      padding: 1.25rem;
-      border-radius: 10px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .stat-card::before {
-      content: '';
-      position: absolute;
-      top: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 30px;
-      height: 1px;
-      background: var(--accent);
-    }
-    .stat-card .value {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-top: 6px;
-    }
-    .stat-card .label {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 0.25rem;
-    }
-    footer {
-      border-top: 1px solid var(--border-light);
-      padding-top: 2rem;
-      margin-top: 2.5rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-    .footer-links {
-      display: flex;
-      gap: 1rem;
-      margin: 1rem 0;
-      flex-wrap: wrap;
-    }
-    .divider {
-      height: 1px;
-      background: var(--border-light);
-      margin: 2rem 0;
-      position: relative;
-    }
-    .divider::after {
-      content: '🧠';
-      position: absolute;
-      left: 50%;
-      top: -8px;
-      transform: translateX(-50%);
-      font-size: 12px;
-    }
-    .quote {
-      font-style: italic;
-      color: var(--muted);
-      border-left: 3px solid var(--accent);
-      padding: 1rem 1.5rem;
-      margin: 1.5rem 0;
-      background: #f0f9ff;
-      border-radius: 0 6px 6px 0;
-    }
-    .neural {
-      color: var(--accent);
-      opacity: 0.6;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="shell-wide">
     <header class="topbar">
-      <a class="mark" href="./">
-        <span style="position: relative; display: inline-block;">
-          Renu
-          <span class="neuron"></span>
-        </span> Arya
-      </a>
+      <a class="mark" href="./">Renu<span class="dot">.</span>Arya</a>
       <nav>
         <a href="./" class="active">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="project.html">Projects</a>
         <a href="publications.html">Publications</a>
-        <a href="cv.md" class="cv-link" target="_blank" rel="noopener">
-          → <span>CV</span>
-        </a>
+        <a href="cv.pdf" class="cv-link" target="_blank" rel="noopener">CV</a>
       </nav>
     </header>
 
@@ -308,10 +26,10 @@
       <p class="greeting">Neuroscience Researcher</p>
       <h1 class="name">Hi, I'm <span class="highlight">Renu</span>.</h1>
       <p class="title">
-        Cognitive Neuroscience Researcher building EEG/fMRI pipelines and
+        Cognitive Science Researcher building EEG/fMRI pipelines and
         applying computational models to understand brain-behavior relationships.
       </p>
-      
+
       <div class="social-links">
         <a href="https://scholar.google.com/citations?hl=en&user=OG6-NsIAAAAJ" target="_blank" rel="noopener">
           <span class="social-btn">📚 Google Scholar</span>
@@ -323,14 +41,14 @@
           <span class="social-btn">💼 LinkedIn</span>
         </a>
       </div>
-      
-      <p class="interests" style="margin-top: 1.5rem;"><span style="font-weight:500;">Research domains — </span>
+
+      <p class="interests" style="margin-top: 1.5rem;">
+        <span style="font-weight:500;">Research interests — </span>
+        <span class="tag">Cognitive Modeling</span>
         <span class="tag">Neuroimaging</span>
         <span class="tag">EEG/fMRI</span>
-        <span class="tag">Computational Modeling</span>
-        <span class="tag">tES/tDCS</span>
+        <span class="tag">Bayesian Statistics</span>
         <span class="tag">Psychiatric Neuroscience</span>
-        <span class="tag">Cognitive Neuroscience</span>
       </p>
     </section>
 
@@ -371,97 +89,31 @@
     </section>
 
     <section class="section">
-      <h2>Experience</h2>
-      <div class="post">
-        <h3>Research Associate <span class="level">Senior</span></h3>
-        <div class="meta">
-          <span class="org">Marbles Health</span>
-          <span class="period">Oct 2025 – Present</span>
-        </div>
-        <p>Leading EEG biomarker identification from tDCS data in psychiatric populations. Building automated analysis pipelines in MATLAB and Python for 200+ EEG sessions.</p>
-        <div class="tags">
-          <span class="tag">tDCS</span>
-          <span class="tag">EEG Analysis</span>
-          <span class="tag">Biomarkers</span>
-          <span class="tag">Python</span>
-        </div>
-      </div>
-      <div class="post">
-        <h3>Network Neuroscience Researcher <span class="level">Mid</span></h3>
-        <div class="meta">
-          <span class="org">NCNL, SAIDE, IIT Jodhpur</span>
-          <span class="period">May–Sept 2025</span>
-        </div>
-        <p>Built fMRI connectome analysis pipeline processing 200+ datasets. Applied graph theory to map resting-state networks in Alzheimer's populations vs healthy controls.</p>
-        <div class="tags">
-          <span class="tag">fMRI</span>
-          <span class="tag">SPM</span>
-          <span class="tag">Graph Theory</span>
-          <span class="tag">Network Neuroscience</span>
-        </div>
-      </div>
-      <div class="post">
-        <h3>Computational Modeling Intern <span class="level">Junior</span></h3>
-        <div class="meta">
-          <span class="org">LINCS Group, IIT Delhi</span>
-          <span class="period">Aug 2024 – May 2025</span>
-        </div>
-        <p>Modeled 8,000+ behavioral decision trials using Drift Diffusion Models with Hierarchical Bayesian inference. Estimated latent cognitive parameters underlying value-based choices.</p>
-        <div class="tags">
-          <span class="tag">DDM</span>
-          <span class="tag">Bayesian Modeling</span>
-          <span class="tag">R</span>
-          <span class="tag">Psychometrics</span>
-        </div>
-      </div>
-      <div class="post">
-        <h3>Research Assistant <span class="level">Junior</span></h3>
-        <div class="meta">
-          <span class="org">TRANSiT Lab, IIT Kanpur</span>
-          <span class="period">May 2024 – Mar 2025</span>
-        </div>
-        <p>Analyzed tRNS treatment efficacy in ADHD using advanced signal processing (FOOOF, wavelets). Received 1st place poster award for cognitive fatigue research.</p>
-        <div class="tags">
-          <span class="tag">tRNS</span>
-          <span class="tag">ADHD</span>
-          <span class="tag">Signal Processing</span>
-          <span class="tag">Statistics</span>
-        </div>
-      </div>
-    </section>
+      <h2>About</h2>
+      <p>
+        I'm a Cognitive Science Researcher with expertise in neural data analysis
+        and computational modeling. I build EEG/fMRI signal processing pipelines
+        and apply Bayesian Hierarchical Modeling and Drift Diffusion Models to
+        behavioral data.
+      </p>
 
-    <section class="section">
-      <h2>Selected Research</h2>
-      <div class="post">
-        <h3>Pilot Mental Health Survey <span class="level">Collaboration</span></h3>
-        <div class="meta">IIT Kanpur · Survey Study</div>
-        <p>Co-led analysis of mental health survey (N=50) assessing depression, anxiety, coping patterns, and counseling access barriers among students.</p>
-        <div class="tags">
-          <span class="tag">Survey Research</span>
-          <span class="tag">Mental Health</span>
-          <span class="tag">Statistics</span>
-        </div>
-      </div>
-      <div class="post">
-        <h3>n-back Working Memory Task <span class="level">Independent</span></h3>
-        <div class="meta">IIT Delhi · MATLAB Experiment</div>
-        <p>Designed and validated 2-back task with 10 participants. Demonstrated load-dependent increases in reaction times and error rates.</p>
-        <div class="tags">
-          <span class="tag">MATLAB</span>
-          <span class="tag">Psychophysics</span>
-          <span class="tag">Experimental Design</span>
-        </div>
-      </div>
-      <div class="post">
-        <h3>Fatigue & Cognitive Performance <span class="level">Independent</span></h3>
-        <div class="meta">IIT Delhi · Quantitative Study</div>
-        <p>Longitudinal analysis of 20+ sessions showing that rest breaks improve arithmetic performance (RT: 98.2s → 81.1s), supporting Cognitive Load Theory.</p>
-        <div class="tags">
-          <span class="tag">Quantitative Analysis</span>
-          <span class="tag">Cognitive Load</span>
-          <span class="tag">Statistics</span>
-        </div>
-      </div>
+      <p>
+        Currently working as a Research Associate at Marbles Health, investigating
+        the neurological impacts of non-invasive brain stimulation (tDCS) across
+        psychiatric disorders including ADHD, OCD, and Depression.
+      </p>
+
+      <p>
+        My work has been published in NeuroImage: Clinical (2025) and I've received
+        a 1st Place Research Poster award at IIT Kanpur. I hold an MSc in Cognitive
+        Science from IIT Delhi and a BA in Psychology from Kurukshetra University.
+      </p>
+
+      <p>
+        Off-hours: music, reading, and exploring the cognitive quirks that make
+        us human. Always happy to chat about research, collaboration, or the latest
+        paper — <a href="mailto:renu@iitdalumni.com">say hi</a>.
+      </p>
     </section>
 
     <section class="section">
@@ -479,9 +131,6 @@
         <a href="https://github.com/RenuArya" target="_blank" rel="noopener">💻 GitHub</a>
         <a href="https://scholar.google.com/citations?hl=en&user=OG6-NsIAAAAJ" target="_blank" rel="noopener">📚 Scholar</a>
         <a href="https://www.linkedin.com/in/renuarya07/" target="_blank" rel="noopener">💼 LinkedIn</a>
-      </div>
-      <div style="margin-top: 0.5rem;">
-        Email: renu@iitdalumni.com
       </div>
       <div style="margin-top: 0.25rem; font-size: 0.8rem;">
         © 2025 Renu Arya · Cognitive Neuroscience Researcher
