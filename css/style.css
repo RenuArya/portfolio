@@ -1,0 +1,120 @@
+/* Renu Arya Portfolio CSS
+   Clean, minimalist, black & white aesthetic */
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --border: #e0e0e0;
+  --link: #0066cc;
+  --max-width: 620px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.shell-wide {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+.mark {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+nav a:hover { color: var(--text); }
+nav a.active { color: var(--text); }
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 20px; margin-top: 32px; }
+h3 { font-size: 16px; }
+
+p { margin-bottom: 16px; }
+a { color: var(--link); }
+a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { margin-bottom: 32px; }
+.hero h1 { font-size: 36px; font-weight: 300; }
+.hero p { color: var(--muted); font-size: 18px; }
+
+/* About */
+.interests { font-weight: 500; }
+.tag {
+  display: inline-block;
+  background: #f5f5f5;
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin: 2px;
+}
+
+/* Posts */
+.post {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+.post:last-child { border-bottom: none; }
+
+.post-title { font-size: 16px; font-weight: 600; }
+.post meta { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.highlight { background: #f8f8f8; padding: 2px 4px; border-radius: 3px; }
+
+/* CV Link */
+.cv-link {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+.cv-link:hover { background: #f5f5f5; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 13px;
+}
