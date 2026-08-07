@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Renu Arya — Portfolio Site
 
 A clean, minimalist portfolio website for **Renu Arya**, a Cognitive Science Researcher specializing in EEG/fMRI analysis, computational modeling, and Bayesian statistics.
@@ -40,3 +41,7 @@ Designed for GitHub Pages. Enable in repo settings:
 ## License
 
 MIT
+=======
+# portfolio
+Personal Portfolio
+>>>>>>> 9577fe2ec2fba0f5ccad274c6e018e9051757217
