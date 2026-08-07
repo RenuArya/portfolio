@@ -4,31 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications — Renu Arya</title>
-  <meta name="description" content="Publications by Renu Arya">
+  <meta name="description" content="Publications by Renu Arya - Cognitive Science Researcher">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='70' fill='%23000'%3E%C2%A7%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #ffffff;
-      --text: #1a1a1a;
-      --muted: #666666;
-      --border: #e0e0e0;
-      --link: #0066cc;
-      --max-width: 620px;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --border-dark: #cbd5e1;
+      --link: #2563eb;
+      --link-hover: #1d4ed8;
+      --accent: #0ea5e0;
+      --max-width: 680px;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: var(--bg);
       color: var(--text);
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       font-size: 16px;
     }
     .shell-wide {
       width: 100%;
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 24px;
+      padding: 32px 24px;
     }
     .topbar {
       display: flex;
@@ -39,44 +44,58 @@
       margin-bottom: 32px;
     }
     .mark {
-      font-size: 20px;
+      font-size: 1.4rem;
       font-weight: 700;
       color: var(--text);
       text-decoration: none;
+      letter-spacing: -0.5px;
     }
+    .mark .dot { color: var(--accent); }
     nav a {
       color: var(--muted);
       text-decoration: none;
-      font-size: 14px;
+      font-size: 0.9rem;
       font-weight: 500;
-      margin-left: 20px;
+      margin-left: 1.5rem;
     }
     nav a:hover { color: var(--text); }
-    h1 { font-size: 28px; font-weight: 700; margin-bottom: 24px; }
-    h2 { font-size: 18px; font-weight: 600; margin: 24px 0 8px; }
-    h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
-    .authors { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
-    .venue { color: var(--muted); font-size: 14px; font-style: italic; margin-bottom: 8px; }
-    .abstract { margin: 12px 0; }
-    .highlight { background: #f8f8f8; padding: 2px 4px; border-radius: 3px; }
+    nav a.active { color: var(--text); }
+    h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+    h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
+    h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
+    .venue { color: var(--muted); font-size: 0.9rem; font-style: italic; margin-bottom: 0.5rem; }
+    .abstract { margin: 1rem 0; color: var(--muted); }
+    .highlight { background: #f8fafc; padding: 2px 6px; border-radius: 3px; }
+    .pub-link {
+      display: inline-block;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .pub-link a { color: var(--link); }
+    .divider { height: 1px; background: var(--border); margin: 1.5rem 0; }
     .cv-link {
       display: inline-block;
-      font-size: 13px;
+      font-size: 0.85rem;
       color: var(--muted);
       border: 1px solid var(--border);
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin-top: 16px;
+      padding: 6px 16px;
+      border-radius: 6px;
+      margin: 1rem 0;
     }
-    .cv-link:hover { background: #f5f5f5; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .footer-links { display: flex; gap: 1rem; margin: 0.5rem 0; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
   <div class="shell-wide">
     <header class="topbar">
-      <a class="mark" href="./">Renu Arya</a>
+      <a class="mark" href="./">Renu<span class="dot">.</span>Arya</a>
       <nav>
         <a href="./">about</a>
         <a href="publications.html" class="active">publications</a>
@@ -86,35 +105,58 @@
 
     <h1>Publications</h1>
 
-    <div class="post">
-      <h3>Dakwar-Kawar, O., Francis, A. J. A., Arya, R., Mairon, N., Mishra, J., Berger, I., Kadosh, R. C., Balasubramani, P. P., & Nahum, M. <strong>(2025).</strong></h3>
+    <p style="margin-bottom: 1.5rem; color: var(--muted);">
+      <a href="https://scholar.google.com/citations?hl=en&user=OG6-NsIAAAAJ" target="_blank" rel="noopener">View full profile on Google Scholar</a>
+    </p>
+
+    <div class="divider"></div>
+
+    <div>
+      <h3>Dakwar-Kawar, O., Francis, A. J. A., Arya, R., Mairon, N., Mishra, J., Berger, I., Kadosh, R. C., Balasubramani, P. P., & Nahum, M. (2025).</h3>
       <div class="venue">
-        <em>Transcranial random noise stimulation on excitation/inhibition balance in ADHD.</em> NeuroImage: Clinical, 49, 103923.
+        <em>Transcranial random noise stimulation on excitation/inhibition balance in ADHD.</em>
+        NeuroImage: Clinical, 49, 103923.
       </div>
       <div class="abstract">
         Preliminary evidence suggests that transcranial random noise stimulation (tRNS) can modulate neural oscillations
         and improve cognitive performance in individuals with ADHD. This study investigated the effects of tRNS on the
         excitation/inhibition (E/I) balance in the visual cortex of ADHD patients using 200+ EEG sessions.
       </div>
-      <p>
-        <a href="https://doi.org/10.1016/j.nicl.2025.103923" target="_blank">DOI: 10.1016/j.nicl.2025.103923</a>
-        · <a href="https://link.springer.com/article/10.1016/j.nicl.2025.103923" target="_blank">Article</a>
-      </p>
-      <span class="highlight">Contributed to systematic reviews, manuscripts, and grant proposals for neurostimulation-based psychiatric interventions.</span>
+      <div class="pub-link">
+        <a href="https://doi.org/10.1016/j.nicl.2025.103923" target="_blank">DOI: 10.1016/j.nicl.2025.103923</a> ·
+        <a href="https://www.sciencedirect.com/science/article/pii/S2213158225001234" target="_blank">Article</a>
+      </div>
+      <div class="highlight" style="margin-top: 0.5rem; display: inline-block; padding: 2px 8px; font-size: 0.8rem;">
+        Contributed to systematic reviews, manuscripts, and grant proposals for neurostimulation-based psychiatric interventions.
+      </div>
     </div>
 
-    <div class="post">
-      <h3>Haribika, M., Roy, S., Arya, R., Mairon, N., Mishra, J., & Kadosh, R. C. <strong>(2025).</strong></h3>
+    <div class="divider"></div>
+
+    <div>
+      <h3>Haribika, M., Roy, S., Arya, R., Mairon, N., Mishra, J., & Kadosh, R. C. (2025).</h3>
       <div class="venue">
         <em>Time's Tug.</em> Zine published as part of the Graphic Narrative Workshop, IIT Delhi.
       </div>
       <div class="abstract">
-        A collaborative zine exploring visual storytelling and cognitive engagement in graphic narratives. Co-authored and
-        co-illustrated with team members from IIT Delhi.
+        A collaborative zine exploring visual storytelling and cognitive engagement in graphic narratives.
+        Co-authored and co-illustrated with team members from IIT Delhi.
       </div>
     </div>
 
-    <a href="cv.pdf" class="cv-link" target="_blank" rel="noopener">← View full CV</a>
+    <a href="cv.md" class="cv-link" target="_blank" rel="noopener">← View full CV</a>
+
+    <footer>
+      <div class="footer-links">
+        <a href="mailto:renu@iitdalumni.com">Email</a>
+        <a href="https://github.com/RenuArya" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=OG6-NsIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/renuarya07/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div style="margin-top: 0.25rem; font-size: 0.8rem;">
+        &copy; 2025 Renu Arya
+      </div>
+    </footer>
   </div>
 </body>
 </html>
